@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<parameter name="browserName" value="Chrome"/>
+	<parameter name="url" value="https://vapesdirect.pk"/>
+	<parameter name="username" value="Noor.zh"/>
+	<parameter name="password" value="Abdullah.123"/>
+	<test name="Test1">
+		<parameter name="browserName" value="Edge"/>
+		<classes>
+			<class name="Tests.ProfileTesting">
+				<methods>
+					<include name="Register"/>
+					<include name="Login"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test2" enabled="true">
+<!--		<parameter name="browserName" value="Chrome"/>-->
+		<classes>
+			<class name="Tests.WishlistTesting">
+				<methods>
+					<include name="AddToWishlist"/>
+					<include name="RemoveFromWishlist"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Test3">
+		<classes>
+			<class name="Tests.SideNavTesting">
+			</class>
+		</classes>
+	</test>
+<!--	<test name="Test4">-->
+<!--		<classes>-->
+<!--			<class name="Tests.ProductTesting"/>-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="Test5">-->
+<!--		<parameter name="browserName" value="Edge"/>-->
+<!--		<classes>-->
+<!--			<class name="Tests.ProfileTesting">-->
+<!--				<methods>-->
+<!--					<include name="LaunchApp"/>-->
+
+<!--				</methods>-->
+<!--			</class>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+<!--	<test name="Test6">-->
+<!--		<parameter name="browserName" value="chrome"/>-->
+<!--		<classes>-->
+<!--			<class name="Tests.ProfileTesting">-->
+<!--				<methods>-->
+<!--					<include name="Login"/>-->
+<!--				</methods>-->
+<!--			</class>-->
+<!--		</classes>-->
+<!--	</test>-->
+
+</suite>
